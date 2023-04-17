@@ -1,4 +1,6 @@
-﻿namespace Task6;
+﻿using Task6.Bulbs;
+
+namespace Task6.Lightstrings;
 
 public  abstract class Lightstring
 {

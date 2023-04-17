@@ -1,4 +1,4 @@
-﻿namespace Task6;
+﻿namespace Task6.Lightstrings;
 
 public class SimpleLightstring : Lightstring
 {
@@ -24,6 +24,7 @@ public class SimpleLightstring : Lightstring
                 burningLights += i + " ";
             }
         }
+
         Console.WriteLine($"Now is {currrentTime} minutes");
         Console.WriteLine($"Simple Lights numbers {burningLights} are burning with white color!");
     }

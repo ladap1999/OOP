@@ -1,4 +1,6 @@
-﻿namespace Task6
+﻿using Task6.Lightstrings;
+
+namespace Task6
 {
     class Program
     {

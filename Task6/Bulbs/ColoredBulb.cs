@@ -1,10 +1,11 @@
-﻿namespace Task6;
+﻿using Task6.Enam;
+
+namespace Task6.Bulbs;
 
 public class ColoredBulb : Bulb
 {
     private Colors color;
-
-
+    
     public void SetColor(Colors color)
     {
         this.color = color;
@@ -34,6 +35,4 @@ public class ColoredBulb : Bulb
             SetColor(Colors.Blue);
         }
     }
-    
-    
 }

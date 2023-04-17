@@ -1,4 +1,6 @@
-﻿namespace Task6;
+﻿using Task6.Bulbs;
+
+namespace Task6.Lightstrings;
 
 public class ColoredLightstring : Lightstring
 {
@@ -11,13 +13,13 @@ public class ColoredLightstring : Lightstring
             coloredBulbs.Add(new ColoredBulb(random.Next(1, 400).ToString()));
         }
     }
-
-
+    
     public override void TurnedOnLights()
     {
         string burningLights = string.Empty;
+        int currrentTime = DateTime.Now.Minute;
         
-        if (DateTime.Now.Minute % 2 == 0)
+        if (currrentTime % 2 == 0)
         {
             for (int i = 0; i < amountOfBulbs; i += 2)
             {   
@@ -31,6 +33,7 @@ public class ColoredLightstring : Lightstring
                 burningLights += $" {i}.{coloredBulbs[i].GetColor()} ";
             }
         }
+        Console.WriteLine($"Now is {currrentTime} minutes");
         Console.WriteLine($"Lights numbers {burningLights} are burning!");
     }
 }
